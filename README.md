@@ -1,10 +1,13 @@
-# RustDesk Server - HuggingFace / Docker / Railway / VPS
+# RustDesk Server for Railway
 
-## 快速启动
-### Docker 一键运行
-```bash
-docker run -d \
-  --name rustdesk \
-  -p 80:80 -p 443:443 \
-  -v ./data:/data \
-  your_dockerhub/rustdesk-hf-server:latest
+This repository lets you deploy RustDesk Server on Railway for free.
+
+Includes:
+- hbbs (Rendezvous Server)
+- hbbr (Relay Server)
+- Automatic startup via Docker
+
+Ports:
+- 21114 (Rendezvous)
+- 21115 (Relay)
+- 21116 (API)
